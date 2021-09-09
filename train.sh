@@ -1,6 +1,6 @@
 set -eux
 
-pretrained_model=./pretrained_lm/roberta_base/
+pretrained_model=roberta-large
 data_dir=./data/DocRED/
 
 lr=5e-5
