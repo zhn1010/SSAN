@@ -5,7 +5,7 @@ data_dir=./data/DocRED/
 
 lr=5e-5
 epoch=40
-batch_size=1
+batch_size=2
 
 CUDA_VISIBLE_DEVICES=0 python ./run_docred.py \
   --model_type roberta \
