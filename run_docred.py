@@ -446,7 +446,7 @@ def load_and_cache_examples(args, tokenizer, evaluate=False, predict=False):
     elif predict:
         examples = processor.get_test_examples(args.data_dir)
     else:
-        examples = processor.get_train_examples(args.data_dir)
+        examples = processor.get_train_examples(args.data_dir)[:2000]
 
     features = convert_examples_to_features(
         examples,
